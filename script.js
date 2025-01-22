@@ -33,52 +33,29 @@ function activateButton(button) {
 maleButton.addEventListener('click', () => activateButton(maleButton));
 femaleButton.addEventListener('click', () => activateButton(femaleButton));
 
-
-
-
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-  
-  grabCursor: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  spaceBetween: 30,
-  initialSlide: 1, 
-  centeredSlides: true,
-
-  slidesPerView: 1,
-  loopAdditionalSlides: 2,
-  breakpoints: {
-    768: {
-      slidesPerView: 2.5,
-      centeredSlides: true,
+//swiper
+function createSwiper(selector, slidesPerViewDesktop) {
+  return new Swiper(selector, {
+    direction: 'horizontal',
+    loop: true,
+    grabCursor: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    spaceBetween: 30,
+    initialSlide: 1,
+    centeredSlides: true,
+    slidesPerView: 1,
+    loopAdditionalSlides: 2,
+    breakpoints: {
+      768: {
+        slidesPerView: slidesPerViewDesktop,
+        centeredSlides: true,
+      }
     }
-  }
-});
-
-const swiper2 = new Swiper('.swiper2', {
-  direction: 'horizontal',
-  loop: true,
-  
-  grabCursor: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-  spaceBetween: 30,
-  initialSlide: 1, 
-  centeredSlides: true,
-
-  slidesPerView: 1,
-  loopAdditionalSlides: 2,
-  breakpoints: {
-    768: {
-      slidesPerView: 3.8,
-      centeredSlides: true,
-    }
-  }
-});
+  });
+}
+const swiper = createSwiper('.swiper', 2.5);
+const swiper2 = createSwiper('.swiper2', 3.8);
 

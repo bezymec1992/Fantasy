@@ -58,7 +58,6 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  background: #F6F7FA;
 }
 
 input,
@@ -113,12 +112,17 @@ ul li {
   height: 51px;
   background-color: white;
   border-radius: 10px;
-}
-.header .header__btn-link {
   background: -webkit-gradient(linear, left top, right top, from(#579AFF), to(#574DCC));
   background: linear-gradient(90deg, #579AFF 0%, #574DCC 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.header .header__btn:hover {
+  -webkit-box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  scale: 1.02;
 }
 
 .main {
@@ -351,7 +355,7 @@ input {
 .main__mb .main__mb-wrap {
   position: relative;
   padding-bottom: 53px;
-  background: url("../imgs/1.png");
+  background: url("../imgs/1.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1109,4 +1113,8 @@ input {
     font-size: 16px;
     line-height: 18.55px;
   }
+}
+
+body {
+  background: #F6F7FA;
 }
