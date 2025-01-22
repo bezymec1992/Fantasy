@@ -1,0 +1,129 @@
+.join {
+  padding-top: 130px;
+  padding-bottom: 170px;
+  position: relative;
+  overflow: hidden;
+
+  @include sm {
+    padding-top: 15px;
+    padding-bottom: 70px;
+  }
+
+  .join__graident {
+    z-index: -1;
+    position: absolute;
+    top: -50px;
+    left: 60%;
+    transform: translateX(-50%);
+  }
+
+  .join__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 46px;
+    grid-row-gap: 40px;
+
+    @include xl {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    @include sm {
+
+      .join__item2,
+      .join__item3,
+      .join__item4 {
+        display: none;
+      }
+    }
+
+
+
+    .join__item1 {
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .join__item2 {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    .join__item3 {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+
+    .join__item4 {
+      grid-area: 2 / 3 / 3 / 4;
+    }
+  }
+
+  .join__item {
+    background-color: $white;
+    border-radius: 40px;
+    max-width: 400px;
+    width: 100%;
+    min-height: 250px;
+    padding: 40px;
+    padding-bottom: 35px;
+
+    @include sm {
+      padding: 28px 24px 10px;
+      min-height: 230px;
+    }
+  }
+
+  .join__title {
+    font-size: 56px;
+    text-align: center;
+    margin-bottom: 45px;
+    line-height: 65px;
+
+    @include sm {
+      font-size: 26px;
+      line-height: 30px;
+      margin-bottom: 30px;
+    }
+  }
+
+  .join__title-wrapp {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .join__subtitle {
+    font-size: 24px;
+    font-weight: 700;
+
+    @include sm {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  .join__txt {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    padding-top: 15px;
+
+    @include sm {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+
+  .join__girl {
+    display: none;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 30px;
+    max-height: 400px;
+    object-fit: cover;
+
+    @include sm {
+      display: block;
+    }
+  }
+}

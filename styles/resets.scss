@@ -1,0 +1,124 @@
+// mixin
+@mixin sm {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: Trebuchet;
+  font-weight: 400;
+  src: url('../fonts/trebuc.woff2');
+}
+
+@font-face {
+  font-family: 'Cerapro';
+  font-weight: 400;
+  src: url('../fonts/cerapro-regular.woff2');
+}
+
+//vars
+$white: #fff;
+$green: #4CAF50;
+$light-green: #b4cb3c;
+$bg: #FAFBFF;
+$black: black;
+$gray: gray;
+$light-gray: rgb(209, 209, 209);
+$red: red;
+$bg-card: #f9f9f9;
+
+/*resets*/
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-display: swap;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Trebuchet", sans-serif;
+}
+
+.container {
+  max-width: 1392px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: black;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background: #F6F7FA;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+  text-decoration: none;
+}

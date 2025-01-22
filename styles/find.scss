@@ -1,0 +1,71 @@
+.find {
+  overflow: hidden;
+  padding-bottom: 170px;
+
+  @include sm {
+    padding-bottom: 57px;
+  }
+
+  .find__title {
+    font-size: 56px;
+    line-height: 65px;
+    font-weight: 700;
+    margin-bottom: 31px;
+    text-align: center;
+
+    @include sm {
+      font-size: 26px;
+      line-height: 30px;
+    }
+  }
+
+  .find__container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+
+    .find__gradient {
+      position: absolute;
+      top: 0;
+      left: -100px;
+      z-index: -1;
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  .find__item {
+    margin: 0 auto;
+    border-radius: 30px;
+    background-color: $white;
+    max-width: 800px;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+    @include sm {
+      flex-direction: column;
+      padding: 30px;
+      height: auto;
+      text-align: center;
+    }
+
+    .find__txt {
+      font-size: 24px;
+      line-height: 30px;
+      max-width: 510px;
+      width: 100%;
+
+      @include sm {
+        font-size: 16px;
+        line-height: 18.55px;
+      }
+    }
+  }
+}

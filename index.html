@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <button class="header__btn"><a class="header__btn-link" href="#">Log in</a></button>
+    </div>
+  </header>
+
+  <section class="main">
+    <div class="container main__wrapper">
+      <div class="main__info">
+        <h1 class="main__title">It’s a hot place for your streaming fantasy.</h1>
+        <p class="main__txt">It’s a free space for watching streams and chatting with alluring people.
+        </p>
+      </div>
+
+      <form id="signupForm1" class="form form-desktop">
+        <button type="submit" class="form__btn">
+          <span><img src="imgs/google2.svg" alt="icon-google"></span>
+          Sign up with Google</button>
+        <span class="form__or">or</span>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="e.g. Alex@email.com" required>
+        </div>
+        <div class="form-group password-container">
+          <label for="password">Password</label>
+          <div class="password__wrapper">
+            <input type="password" id="password" placeholder="8+ characters" required minlength="8">
+            <span class="toggle-password" id="togglePassword"><img src="imgs/eye.svg" alt="eye"></span>
+          </div>
+        </div>
+        <button type="submit" class="form__btn">
+          <span><img src="imgs/google1.svg" alt="icon-google"></span>
+          Sign up with Google</button>
+        <p class="form__txt">
+          You hereby confirm that you are fully able and competent to access Livebeam and comply with the Terms of Use &
+          Service, and are at least eighteen (18) years of age or the age of majority under the law of the jurisdiction
+          of your residence and the one you are accessing Livebeam from.
+        </p>
+        <div class="form__lines"><span></span><span></span></div>
+      </form>
+
+      <img class="big-gradient" src="imgs/big-gradient-min.webp" alt="gradient">
+    </div>
+    <div class="main__mb">
+      <div class="main__mb-wrap">
+        <a href="#signupForm2" class="main__mb-btn">Sign up now</a>
+        <img src="imgs/girl.webp" alt="girl">
+      </div>
+      <div class="container">
+        <h2 class="main__mb-title">
+          It’s a dedicated space for your bold fantasies!
+        </h2>
+        <p class="main__bm-txt">
+          Hundreds of attractive admirers are already waiting for you here. Don’t delay – dive into the world of
+          streaming, flirting and hot communication right now!
+        </p>
+
+        <form id="signupForm2" class="form form-mb">
+          <div class="form-group">
+            <label>I am</label>
+            <div class="gender-container" id="gender">
+              <button type="button" class="gender-button" id="maleButton">Male</button>
+              <button type="button" class="gender-button" id="femaleButton">Female</button>
+            </div>
+          </div>
+          <div class="form-group password-container">
+            <label for="text">My name</label>
+            <input type="text" id="text" placeholder="e.g. Alex" required>
+          </div>
+          <div class="form-group password-container">
+            <label for="day">I was born</label>
+            <input type="text" id="day" placeholder="MM/DD/YYYY" required pattern="\d{8}" title="Enter exactly 8 digits"
+              maxlength="8" minlength="8">
+          </div>
+          <div class="form-group password-container checkbox">
+            <input class="form__checkbox" type="checkbox" required>
+            <p>
+              I have read understand and agree to Terms of Use, Privacy Policy, Disclosures&Disclaimers.
+            </p>
+          </div>
+
+          <button type="submit" class="form__btn">Sign up with now</button>
+          <div class="form__lines"><span></span><span></span></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="slider">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/slide1.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/slide2.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/slide3.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/slide4.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/slide2.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/slide3.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/slide4.webp" alt="girl-slide">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container about__container">
+      <img class="about__gradient" src="imgs/small-gradient-min.webp" alt="gradient">
+      <div class="about__wrapper">
+        <h2 class="about__title">About</h2>
+        <p class="about__txt">
+          It’s a global streaming platform for communication and meeting incredibly beautiful people. We created an
+          excellent place where you can enjoy your time and find appropriate matches at first.
+        </p>
+        <p class="about__txt">Approximately 80% of our users have already found their lovelies. Watch streams w ithout
+          hindrance and meet
+          someone who interests you.</p>
+        <a class="about__btn dsct" href="#signupForm1">Join for free</a>
+        <a class="about__btn mb" href="#signupForm2">Join for free</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="join">
+    <img class="join__graident" src="imgs/big-gradient-min.webp" alt="gradient">
+    <h2 class="join__title">Why join us?</h2>
+    <div class="container join__container">
+      <div class="join__item join__item1">
+        <div class="join__title-wrapp">
+          <img src="imgs/join1.svg" alt="icon">
+          <h3 class="join__subtitle">
+            Chat with attractive streamers for free
+          </h3>
+        </div>
+        <p class="join__txt">
+          It’s an excellent web platform for streaming. Write messages to the beautiful streamers for free and explore
+          this magical universe of communication!
+        </p>
+      </div>
+
+      <div class="join__item join__item2">
+        <div class="join__title-wrapp">
+          <img src="imgs/join2.svg" alt="icon">
+          <h3 class="join__subtitle">
+            Only verified users
+          </h3>
+        </div>
+        <p class="join__txt">
+          We care about the privacy and security of our customers. All accounts are verified so look for an attractive
+          stranger confidently!
+        </p>
+      </div>
+
+      <div class="join__item join__item3">
+        <div class="join__title-wrapp">
+          <img src="imgs/join3.svg" alt="icon">
+          <h3 class="join__subtitle">
+            Customized search
+          </h3>
+        </div>
+        <p class="join__txt">
+          Match alluring partners for your own preferences. Maybe you will be interested in a hot slender European or
+          shy beautiful Asian? Make your choice…
+        </p>
+      </div>
+
+      <div class="join__item join__item4">
+        <div class="join__title-wrapp">
+          <img src="imgs/join4.svg" alt="icon">
+          <h3 class="join__subtitle">
+            Easy to use
+          </h3>
+        </div>
+        <p class="join__txt">
+          Forget about hundreds of annoying notifications and inconvenient use.
+          We have created the platform as easy to use and search as possible. Don’t waste your time studying
+          functionality.
+          Just enjoy!
+        </p>
+      </div>
+
+      <img class="join__girl" src="imgs/join-img.webp" alt="girl">
+    </div>
+  </section>
+
+  <section class="find">
+    <h2 class="find__title">Here you can find</h2>
+    <div class="container find__container">
+      <img class="find__gradient" src="imgs/small-gradient-min.webp" alt="gradient">
+      <div class="find__item">
+        <img class="find__img" src="imgs/find1.svg" alt="icon">
+        <p class="find__txt">Watching streams of everyone you really like;</p>
+      </div>
+      <div class="find__item">
+        <img class="find__img" src="imgs/find2.svg" alt="icon">
+        <p class="find__txt">Free communication with pretty streamers;</p>
+      </div>
+      <div class="find__item">
+        <img class="find__img" src="imgs/find3.svg" alt="icon">
+        <p class="find__txt">Sweet connection with people you match;</p>
+      </div>
+      <div class="find__item">
+        <img class="find__img" src="imgs/find4.svg" alt="icon">
+        <p class="find__txt">New acquaintances with someone who has similar interests;
+        </p>
+      </div>
+      <div class="find__item">
+        <img class="find__img" src="imgs/find5.svg" alt="icon">
+        <p class="find__txt">Fascinating hobbies and exciting occupations from people you fancy.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="stream">
+    <img class="stream__gradient" src="imgs/big-gradient-min.webp" alt="gradient">
+    <h2 class="stream__title">It’s a universe of communication and streaming without borders!</h2>
+    <p class="stream__txt">Let yourself to be free – share your thoughts, delight, and fears with beautiful strangers!
+    </p>
+
+    <div class="swiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/stream1.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/stream2.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/stream3.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/stream4.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/stream5.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/stream2.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/stream3.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/stream4.webp" alt="girl-slide">
+        </div>
+        <div class="swiper-slide">
+          <img class="slide__img" src="imgs/stream5.webp" alt="girl-slide">
+        </div>
+      </div>
+    </div>
+
+    <a class="stream__btn mb" href="#signupForm2">Join us for free</a>
+    <a class="stream__btn desk" href="#signupForm1">Join us for free</a>
+  </section>
+
+  <section class="space">
+    <div class="container space__container">
+      <div class="space__info">
+        <h2 class="space__title">It’s a dedicated space for your bold fantasies!</h2>
+        <p class="space__txt">Hundreds of attractive admirers are already waiting for you here. Don’t delay – dive into
+          the world of streaming, flirting, and hot communication right now!</p>
+        <a class="space__btn" href="#signupForm1">Write to her</a>
+      </div>
+      <div class="space__banner">
+        <img class="space__img" src="imgs/space.webp" alt="girl">
+        <img class="space__gradient" src="imgs/big-gradient-min.webp" alt="gradient">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__column">
+        <a class="footer__link" href="mailto:support@gmail.com">support@gmail.com</a>
+        <a class="footer__link" href="#">Unsubscribe</a>
+      </div>
+      <div class="footer__column">
+        <p class="footer__description">Legal terms</p>
+        <a class="footer__link" href="#">Terms of Use</a>
+        <a class="footer__link" href="#">Disclosures & Disclaimers</a>
+      </div>
+      <div class="footer__column">
+        <p class="footer__description">Privacy info</p>
+        <a class="footer__link" href="#">Privacy Policy</a>
+        <a class="footer__link" href="#">Cookie Policy</a>
+      </div>
+      <div class="footer__column">
+        <p class="footer__description">About</p>
+        <a class="footer__link" href="#about">About Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

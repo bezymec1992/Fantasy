@@ -1,0 +1,45 @@
+.footer {
+  background-color: $white;
+  padding: 100px 0;
+
+  @include sm {
+    padding: 52px 20px;
+  }
+
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include sm {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  .footer__link {
+    display: block;
+    font-size: 22px;
+    line-height: 25.55px;
+    padding-bottom: 22px;
+
+    @include sm {
+      padding-bottom: 10px;
+      font-size: 16px;
+      line-height: 18.55px;
+    }
+  }
+
+  .footer__description {
+    font-size: 22px;
+    line-height: 25.55px;
+    font-weight: bold;
+    margin-bottom: 39px;
+
+    @include sm {
+      margin-bottom: 10px;
+      font-size: 16px;
+      line-height: 18.55px;
+    }
+  }
+}
